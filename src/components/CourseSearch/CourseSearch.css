@@ -1,0 +1,111 @@
+.banner {
+  padding-top: 90px;
+}
+
+.banner-filter {
+  width: 100%;
+  height: 276px;
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.course-search {
+  height: 280px;
+  background-image: url('https://apps.cebroker.com/public/d1f2fd0be066a27e462c74ab55dcd77e.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  z-index: -1;
+}
+
+.container-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 280px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+  z-index: 2;
+}
+
+h2 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 20px;
+  z-index: 2;
+}
+
+.input-button {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.input-search {
+  width: 410px;
+  height: 45px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+}
+
+.button-search {
+  width: 47px;
+  height: 45px;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background-color: #3aba91;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.course-search-body {
+  padding: 0 7%;
+}
+
+.featured-courses-section h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: rgb(170, 181, 180);
+  padding-left: 8px;
+  font-weight: bold;
+  color: #555959;
+}
+
+.featured-courses-section .fc-list .featured-course + .featured-course {
+  margin-top: 15px;
+}
+
+.courses-section {
+  font-size: 22px;
+  color: rgb(170, 181, 180);
+  margin-top: 30px;
+}
+.courses-section span {
+  color: #3aba91;
+  font-weight: bold;
+}
+
+.courses-section h3 {
+  color: #999;
+  font-size: 21px;
+  font-weight: normal;
+}
+
+.c-list {
+  display: flex;
+  flex-wrap: wrap;
+}
