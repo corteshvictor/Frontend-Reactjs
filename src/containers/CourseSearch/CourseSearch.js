@@ -10,9 +10,7 @@ class CourseSearch extends Component {
     this.state = {
       featuredCourses: [],
       courses: {},
-      query: '',
-      loading: false //,
-      //error: ''
+      query: ''
     };
 
     this.searchCourses = this.searchCourses.bind(this);
@@ -35,9 +33,7 @@ class CourseSearch extends Component {
       })
       .catch(err => {
         this.setState({
-          featuredCourses: [],
-          loading: false //,
-          //error: err.message
+          featuredCourses: []
         });
       });
   }
@@ -50,16 +46,12 @@ class CourseSearch extends Component {
       )
       .then(result => {
         this.setState({
-          courses: result.data,
-          loading: false //,
-          //error: ''
+          courses: result.data
         });
       })
       .catch(err => {
         this.setState({
-          courses: {},
-          loading: false //,
-          //error: err.message
+          courses: {}
         });
       });
   }
