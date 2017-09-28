@@ -1,1 +1,10 @@
+.app {
+  margin-top: 106px;
+}
 
+.app .fixed-top-nav {
+  position: fixed !important;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+}

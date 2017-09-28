@@ -1,52 +1,40 @@
 .course-box {
-  width: 325px;
-  height: 215px;
-  background-color: white;
-  margin: 0 30px 30px 0px;
-  padding: 10px 10px 10px 20px;
-  display: inline-block;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
 }
 
-.course-box .cb-detail p {
+.course-box .cb-col {
+  height: 250px;
+  padding: 0 12px;
+}
+
+.course-box .info-course {
+  height: 150px;
+}
+
+.course-box .info-course p {
   margin: 0;
   padding: 10px 0 10px 0;
   font-size: 13px;
 }
 
-.course-box .cb-detail .cb-title {
-  font-weight: 700;
-  color: rgb(30, 42, 42);
+.course-box .cb-hrbutton hr {
+  margin-top: 22px;
+  margin-bottom: 12px;
 }
 
-.course-box .cb-detail.cb-provider {
-  color: rgb(170, 181, 180);
-  margin: 4px 0;
+.course-box .info-course .cb-title {
+  font-weight: 600;
+  color: #555959;
+  margin-bottom: 10px;
 }
 
-.course-box .cb-detail .cb-description {
-  color: rgb(116, 121, 120);
+.course-box .info-course .cb-provider {
+  color: #9da9a8;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
-.course-box .cb-detail hr {
-  border: 0;
-  border-top: 1px solid #eee;
-  height: 0;
-  margin: 15px 10px 10px 0;
-}
-
-.course-box .cb-detail button {
-  background-color: rgb(32, 186, 149);
-  border: none;
-  border-radius: 4px;
-  height: 30px;
-  color: white;
-  font-size: 12px;
-  font-weight: 900;
-  cursor: pointer;
-}
-
-.info-course {
-  height: 150px;
-  margin-right: 10px;
+.course-box .info-course .cb-description {
+  color: #555959;
+  font-weight: 300;
 }

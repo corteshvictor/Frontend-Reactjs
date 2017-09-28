@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Nav, Navbar, NavItem } from 'react-bootstrap';
 
 import './NavBar.css';
 const menuList = [
@@ -12,23 +13,30 @@ const menuList = [
 const NavBar = () => {
   return (
     <div className="nav-bar">
-      <img
-        src="https://www.cebroker.com/Content/images/logo-ceb-smallarrows-tablet.png"
-        alt="logo CE Broker"
-        style={{ height: '40px', alignItems: 'flex-start' }}
-      />
-      <div className="nav-bar-menu">
-        <ul className="ul_nav-bar">
-          {menuList.map((item, index) => {
-            return (
-              <li className="nav-item" key={index}>
-                <a>{item}</a>
-              </li>
-            );
-          })}
-        </ul>
-        <button className="nav-button">7 day trial</button>
-      </div>
+      <Navbar>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a>
+              <img
+                src="https://www.cebroker.com/Content/images/logo-ceb-smallarrows-tablet.png"
+                alt="logo CE Broker"
+                className="logo-brand"
+              />
+            </a>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            {menuList.map((item, index) => {
+              return <NavItem eventKey={index}>{item}</NavItem>;
+            })}
+            <Button bsStyle="primary" className="btn-trial">
+              7 day trial
+            </Button>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, Grid, Col, Row, Thumbnail } from 'react-bootstrap';
 
 import { FeaturedCourseBox, CourseBox } from '../index';
 import './CourseSearch.css';
@@ -82,8 +83,6 @@ class CourseSearch extends Component {
     const { courses: { totalItems = 0 }, query } = this.props;
     return (
       <div>
-        <div className="banner" />
-        <div className="banner-filter" />
         <div className="course-search">
           <form onSubmit={this.handleOnSubmit}>
             <div className="container-search">
@@ -96,24 +95,27 @@ class CourseSearch extends Component {
                   onChange={this.handleOnChange}
                   value={query}
                 />
-                <button className="button-search">
+                <Button bsStyle="success">
                   <i className="fa fa-search" />
-                </button>
+                </Button>
               </div>
               <h2>Florida | Registered Nurse Florida</h2>
             </div>
           </form>
         </div>
-        <div className="course-search-body">
+        <div className="course-search-body container">
           <div className="featured-courses-section">
             <h3>Featured Courses</h3>
             <div className="fc-list">{this.getFeaturedCourses()}</div>
           </div>
+          <hr />
           <div className="courses-section">
             <h3>
               <span>{totalItems}</span> Results
             </h3>
-            <div className="c-list">{this.getCourses()}</div>
+            <Grid>
+              <Row>{this.getCourses()}</Row>
+            </Grid>
           </div>
         </div>
       </div>

@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
 
 import { TopMenu, NavBar } from '../index';
 import { CourseSearch } from '../../containers';
 
+import './App.css';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div style={{ position: 'fixed', zIndex: '3', width: '100%' }}>
+      <div className="app">
+        <div className="fixed-top-nav">
           <TopMenu />
           <NavBar />
         </div>
